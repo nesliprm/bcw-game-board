@@ -1,5 +1,12 @@
+:root {
+  --color1: #394a51;
+  --color2: #7fa99b;
+  --color3: #fbf2d5;
+  --color4: #fdc57b;
+}
+
 body {
-  font-family: monospace;
+  font-family: "Share Tech", sans-serif;
   margin-left: 30px;
 }
 
@@ -15,7 +22,7 @@ main {
 
 .game-container {
   width: 50%;
-  background-color: beige;
+  background-color: var(--color3);
   padding: 20px;
   border-radius: 10px;
 }
