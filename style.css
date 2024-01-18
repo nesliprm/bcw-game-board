@@ -5,25 +5,49 @@
   --color4: #fdc57b;
 }
 
+/* ELEMENTS */
+
 body {
   font-family: "Share Tech", sans-serif;
-  margin-left: 30px;
+  color: var(--color1);
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 h1 {
-  color: var(--color1);
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-main {
-  margin-top: 20px;
-}
+/* CLASSES */
 
 .game-container {
-  width: 50%;
+  width: 322px;
   background-color: var(--color3);
   padding: 20px;
   border-radius: 10px;
+}
+
+.game-board {
+  border: solid 1px var(--color1);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  border: solid 1px var(--color1);
+  width: 30px;
+  height: 30px;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+.end-game-screen {
+  position: absolute;
 }
