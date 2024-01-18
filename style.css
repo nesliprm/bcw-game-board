@@ -59,6 +59,7 @@ button:hover {
   width: 322px;
   background-color: var(--color0);
   padding: 30px;
+  border: dashed 1px;
   border-radius: 10px;
   position: relative;
 }
@@ -76,10 +77,11 @@ button:hover {
   border: solid 1px var(--color1);
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .cell:hover {
-  cursor: pointer;
+  border: solid 1px rgb(190, 190, 190);
 }
 
 .end-game-screen {
@@ -105,4 +107,9 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.clicked {
+  background-color: var(--color4);
+  cursor: not-allowed;
 }
