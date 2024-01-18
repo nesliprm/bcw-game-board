@@ -10,13 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/ea89842d86.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <link rel="stylesheet" href="style.css" />
   <body>
     <div class="game-container">
       <header>
-        <h1>DangerGrid</h1>
-        <h3><span>Score: </span><span>00000</span></h3>
+        <span class="title">DangerGrid<i class="fa-solid fa-burst"></i></span
+        ><span class="score-panel"
+          >score: <span class="score">00000</span></span
+        >
       </header>
       <main class="game-board">
         <div class="grid">
@@ -121,11 +127,11 @@
           <div class="cell"></div>
           <div class="cell"></div>
         </div>
-        <div class="end-game-screen">
-          <h2>GAME OVER</h2>
-          <button>Reload Game</button>
-        </div>
       </main>
+      <div class="end-game-screen hidden">
+        <div class="end-game-text">GAME OVER</div>
+        <button>Reload Game</button>
+      </div>
     </div>
   </body>
 </html>

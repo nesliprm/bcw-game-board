@@ -1,32 +1,66 @@
 :root {
+  --color0: rgb(250, 250, 250);
   --color1: #394a51;
   --color2: #7fa99b;
+  --color2-trans: rgba(127, 169, 155, 0.8);
   --color3: #fbf2d5;
   --color4: #fdc57b;
+  --color4-trans: rgba(253, 197, 123, 0.8);
+  --main-font: "Share Tech", sans-serif;
 }
 
 /* ELEMENTS */
 
 body {
-  font-family: "Share Tech", sans-serif;
+  font-family: var(--main-font);
   color: var(--color1);
-  margin-left: 20px;
-  margin-top: 20px;
+  background-color: var(--color3);
 }
 
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+i {
+  font-size: 35px;
+  margin-left: 3px;
+}
+
+button {
+  color: var(--color1);
+  font-family: var(--main-font);
+  font-size: 18px;
+  padding: 8px 16px;
+  border: dashed 1px var(--color1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color2);
+  transition: ease-in-out 0.1s;
 }
 
 /* CLASSES */
 
+.title {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.score-panel {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
 .game-container {
   width: 322px;
-  background-color: var(--color3);
-  padding: 20px;
+  background-color: var(--color0);
+  padding: 30px;
   border-radius: 10px;
+  position: relative;
 }
 
 .game-board {
@@ -49,5 +83,26 @@ h1 {
 }
 
 .end-game-screen {
+  border-radius: 10px;
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color4-trans);
+}
+
+.end-game-text {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 6px;
+}
+
+.hidden {
+  display: none;
 }
