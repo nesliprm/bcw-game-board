@@ -138,3 +138,8 @@ a:hover {
   background-image: url(./images/bomb.png);
   background-size: contain;
 }
+
+.info-text {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
